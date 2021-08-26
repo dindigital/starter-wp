@@ -1,4 +1,4 @@
-# Kevstarter WordPress
+# Starter WordPress
 
 ## Sumário
 
