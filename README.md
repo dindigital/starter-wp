@@ -12,43 +12,34 @@ Antes de instalar as dependências, verifique e instale a versão do node descri
 
 ### Hierarquia de pastas
 
-- /assets
-  - /css
-  - /fonts
-  - /img
-  - /js
+```
+- /assets (pasta de bundles)
+  - /css (css buildado por página)
+  - /fonts (arquivos de fontes e ícones)
+  - /img (imagens estáticas do projeto)
+  - /js (js buildado por página)
 - /includes
-  - /api
-  - /functions
-  - /template-parts
-    - /modules
-      - /sections
-    - /layouts
-- /src
+  - /api (rotas de API personalizadas)
+  - /functions (funções separadas por arquivo)
+  - /services (conexões php externas)
+- /src (estilos e scripts)
   - /js
-    - /modules
-    - /services
-    - /utils
   - /scss
-    - /base
-      - /_animations
-      - /_fonts
-      - /_helpers
-      - /_variables
-      - /_vendor
-    - /modules
-    - /layout
-    - /vendor
+- /template-parts
+  - /modules
+  - /sections
+  - /layouts
 - .gitignore
 - 404.php
 - footer.php
-- functions.php
+- functions.php (chamada dos arquivos criados em /includes/functions)
 - gulpfile.php
 - header.php
 - index.php
 - package.json
 - README.md
-- style.css
+- style.css (arquivo para documentação do tema)
+```
 
 ### Estrutura de pastas
 
