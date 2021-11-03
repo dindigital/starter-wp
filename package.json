@@ -33,12 +33,13 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "postcss-short-color": "^4.0.0",
-    "precss": "^4.0.0",
-    "prettier": "1.19.1"
+    "precss": "^4.0.0"
   },
   "dependencies": {
+    "@prettier/plugin-php": "^0.17.6",
     "jquery": "^3.4.1",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "prettier": "^2.4.1"
   },
   "browserslist": [
     "last 40 version"
