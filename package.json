@@ -49,6 +49,7 @@
     "rollup-plugin-node-resolve": "^5.2.0"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.2",
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.1"
   },
@@ -57,6 +58,11 @@
   ],
   "description": "",
   "keywords": [],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
   }
