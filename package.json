@@ -1,49 +1,63 @@
 {
-  "name": "Din Starter WP",
+  "name": "starter-wp",
   "version": "1.0.0",
   "main": "index.php",
   "scripts": {
     "start": "npx gulp watch",
-    "build": "npx gulp"
+    "build": "npx gulp",
+    "lint": "eslint src/js/**/*.js",
+    "lint:fix": "eslint src/js/**/*.js --fix",
+    "prepare": "husky install"
   },
   "engines": {
-    "node": "14.17.5"
+    "node": "16.13.2"
   },
   "author": "Din Digital",
   "license": "cc0-1.0",
   "devDependencies": {
     "@babel/core": "^7.7.2",
     "@babel/preset-env": "^7.7.1",
+    "@wordpress/eslint-plugin": "^11.0.0",
+    "@wordpress/prettier-config": "^1.1.1",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-babel": "^8.0.0-beta.2",
+    "gulp-better-rollup": "^4.0.1",
     "gulp-clean-css": "^4.2.0",
     "gulp-cli": "^2.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-penthouse": "^0.2.0",
     "gulp-postcss": "^8.0.0",
-    "gulp-better-rollup": "^4.0.1",
-    "rollup": "^2.56.1",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.5",
     "postcss-short-color": "^4.0.0",
-    "precss": "^4.0.0"
+    "precss": "^4.0.0",
+    "prettier": "^2.5.1",
+    "rollup": "^2.56.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
   },
   "dependencies": {
-    "@prettier/plugin-php": "^0.17.6",
     "jquery": "^3.4.1",
-    "normalize.css": "^8.0.1",
-    "prettier": "^2.4.1"
+    "normalize.css": "^8.0.1"
   },
   "browserslist": [
     "last 40 version"
   ],
   "description": "",
-  "keywords": []
+  "keywords": [],
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
 }
