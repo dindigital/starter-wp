@@ -1,24 +1,24 @@
 <?php
 // Post Types
-include('includes/functions/post-types.php');
+include 'includes/functions/post-types.php';
 
 // Ajax
-include('includes/functions/ajax.php');
+include 'includes/functions/ajax.php';
 
 // image size
-include('includes/functions/image-size.php');
+include 'includes/functions/image-size.php';
 
 // scripts
-include('includes/functions/scripts.php');
+include 'includes/functions/scripts.php';
 
 // Querys
-include('includes/functions/query.php');
+include 'includes/functions/query.php';
 
 // Utils
-include('includes/functions/utils.php');
+include 'includes/functions/utils.php';
 
 // Blocks
-include('includes/functions/blocks.php');
+include 'includes/functions/blocks.php';
 
 // Menu
-include('includes/functions/menu.php');
+include 'includes/functions/menu.php';

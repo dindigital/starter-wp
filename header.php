@@ -1,6 +1,6 @@
 <?php
-  global $theme_uri;
-  $theme_uri = get_template_directory_uri();
+global $theme_uri;
+$theme_uri = get_template_directory_uri();
 ?>
 
 <!DOCTYPE html>
@@ -35,9 +35,9 @@
   <link rel="mask-icon" href="<?php echo $theme_uri; ?>/assets/img/favicon/safari-pinned-tab.svg" color="#323451">
 
   <?php if (is_page_template('template-homepage.php')) {
-    echo '<style>';
-    get_template_part('/assets/css/csscritical', 'critical-css');
-    echo '</style>';
+  	echo '<style>';
+  	get_template_part('/assets/css/csscritical', 'critical-css');
+  	echo '</style>';
   } ?>
 
   <?php wp_head(); ?>
