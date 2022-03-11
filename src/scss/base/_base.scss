@@ -1,25 +1,26 @@
-@import './_fonts/all';
-@import './_vendor/all';
+@import "./_fonts/all";
+@import "./_vendor/all";
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 ::selection {
+	background: transparent;
 }
 
 html {
-  min-height: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	min-height: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  height: 100%;
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: normal;
-  color: var(--color-dark);
+	height: 100%;
+	font-family: $font-family;
+	font-size: $font-size;
+	line-height: normal;
+	color: var(--color-dark);
 }
 
 h1,
@@ -28,10 +29,12 @@ h3,
 h4,
 h5,
 h6 {
+	margin: 0;
 }
 
-ul, ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
