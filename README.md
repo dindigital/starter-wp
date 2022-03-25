@@ -1,84 +1,44 @@
-# Starter WordPress
+# Din Starter WP
+
+Tema base para projetos WordPress feitos na Din Digital.
 
 ## Sumário
 
-- [Instalação](#Instalação)
-- [Hierarquia de pastas](#Hierarquia-de-pastas)
-- [Estrutura de pastas](#Estrutura-de-pastas)
+- [O que o Starter WP possui?](#o-que-o-starter-wp-possui)
+- [Instalação](#instalação)
+  - [Instalação em novos projetos](#instalação-em-novos-projetos)
+  - [Instalação em projetos existentes](#instalação-em-projetos-existentes)
+
+### O que o Starter WP possui?
+
+Biblioteca | Versão | Complementares
+--- | --- | ---
+Node.js | 16.13.2 | 
+Gulp | 4.0.2 | gulp-autoprefixer (7.0.1), gulp-babel (8.0.0-beta.2), gulp-better-rollup (4.0.1), gulp-clean-css (4.2.0), gulp-concat (2.6.1), gulp-penthouse (0.2.0), gulp-postcss (8.0.0), gulp-sass (4.0.2), gulp-sourcemaps (2.6.5), gulp-uglify (3.0.2)
+Babel | 7.7.2 |
+jQuery | 3.4.1 | 
+Normalize | 8.0.1 |
+Prettier | 2.5.1 | @prettier/plugin-php (0.18.3)
+ESLint | 8.10.0 | eslint-config-airbnb-base (15.0.0), eslint-config-prettier (8.5.0), eslint-plugin-import (2.25.4), eslint-plugin-prettier (4.0.0)
+StyleLint | 13.13.1 | stylelint-config-wordpress (17.0.0)
+Husky | 7.0.4 | 
 
 ### Instalação
 
-Antes de instalar as dependências, verifique e instale a versão do node descrita no arquivo [package.json](/package.json#L10) (recomendado usar NVM) e após isso rodar `npm install` na raíz do tema.
+Para a utilização de nosso tema base 
 
-### Hierarquia de pastas
+#### Instalação em novos projetos
 
+Para projetos novos, vá até a pasta `themes` e clone o tema, renomeie a pasta do tema, exclua a pasta .git original do tema e inicie um novo git no tema
+
+```sh
+$ git clone git@github.com:dindigital/starter-wp.git
+$ mv starter-wp tema-XYZ
+$ cd tema-XYZ
+$ rm -rf .git
+$ git init
 ```
-- /assets (pasta de bundles)
-  - /css (css buildado por página)
-  - /fonts (arquivos de fontes e ícones)
-  - /img (imagens estáticas do projeto)
-  - /js (js buildado por página)
-- /includes
-  - /api (rotas de API personalizadas)
-  - /functions (funções separadas por arquivo)
-  - /services (conexões php externas)
-- /src (estilos e scripts)
-  - /js
-  - /scss
-- /template-parts
-  - /modules
-  - /sections
-  - /layouts
-- .gitignore
-- 404.php
-- footer.php
-- functions.php (chamada dos arquivos criados em /includes/functions)
-- gulpfile.php
-- header.php
-- index.php
-- package.json
-- README.md
-- style.css (arquivo para documentação do tema)
-```
+ 
+#### Instalação em projetos existentes
 
-### Estrutura de pastas
-
-#### /assets
-
-Arquivos finais e compilados.
-
-#### /includes
-
-Includes
-
-##### /includes/api
-
-Endpoints customizados
-
-##### /includes/functions
-
-Funções do site
-
-##### /includes/template-parts
-
-Partes reutilizáveis do site
-
-###### /includes/template-parts/modules
-
-Módulos que são usados em diferentes partes do site.
-
-###### /includes/template-parts/layouts
-
-Partes do site
-
-#### /src
-
-Arquivos fontes
-
-##### /src/js
-
-Scripts
-
-##### /src/scss
-
-Arquivos Sass
+Para projetos já existentes, o melhor a se fazer é instalar as libs de documentação, lints e tasks do Gulp.
