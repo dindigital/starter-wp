@@ -43,10 +43,22 @@ Atualizar versão do Node para 16.13.2, com [NVM](https://github.com/nvm-sh/nvm)
 
 Para projetos já existentes, o melhor a se fazer é instalar as libs de padronização, linters e tasks do Gulp para evitar conflitos com plugins e páginas.
 
+##### ESLint
+
+Crie o arquivo `.eslintrc.json` com o [conteúdo do arquivo](https://github.com/dindigital/starter-wp/blob/master/.eslintrc.json).
+
+##### Prettier
+
+Crie o arquivo `.prettierrc.json` com o [conteúdo do arquivo](https://github.com/dindigital/starter-wp/blob/master/.prettierrc.json).
+
+##### Stylelint
+
+Crie o arquivo `.stylelintrc.json` com o [conteúdo do arquivo](https://github.com/dindigital/starter-wp/blob/master/.stylelintrc.json).
+
 ##### Editor Config
 
 Crie o arquivo `.editorconfig` com o [conteúdo do arquivo](https://github.com/dindigital/starter-wp/blob/master/.editorconfig).
 
-##### ESLint
+###### Informações complementares
 
-Crie o arquivo `.eslintrc.json` com o [conteúdo do arquivo](https://github.com/dindigital/starter-wp/blob/master/.eslintrc.json).
+Para mais informações, as instalações foram feitas [seguindo este tutorial](https://marioyepes.com/eslint-prettier-wordpress-config/).
