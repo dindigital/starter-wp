@@ -25,8 +25,6 @@ Husky | 7.0.4 |
 
 ### Instalação
 
-Para a utilização de nosso tema base 
-
 #### Instalação em novos projetos
 
 Para projetos novos, vá até a pasta `themes` e clone o tema, renomeie a pasta do tema, exclua a pasta .git original do tema e inicie um novo git no tema
@@ -38,7 +36,17 @@ $ cd tema-XYZ
 $ rm -rf .git
 $ git init
 ```
+
+Atualizar versão do Node para 16.13.2, com [NVM](https://github.com/nvm-sh/nvm), e rodar `npm install` para instalar as dependências.
  
 #### Instalação em projetos existentes
 
-Para projetos já existentes, o melhor a se fazer é instalar as libs de documentação, lints e tasks do Gulp.
+Para projetos já existentes, o melhor a se fazer é instalar as libs de padronização, linters e tasks do Gulp para evitar conflitos com plugins e páginas.
+
+##### Editor Config
+
+Crie o arquivo `.editorconfig` com o [conteúdo do arquivo](https://github.com/dindigital/starter-wp/blob/master/.editorconfig).
+
+##### ESLint
+
+Crie o arquivo `.eslintrc.json` com o [conteúdo do arquivo](https://github.com/dindigital/starter-wp/blob/master/.eslintrc.json).
