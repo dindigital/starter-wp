@@ -4,14 +4,16 @@ function custom_js()
 {
 	global $theme_uri;
 	$post_type = get_post_type();
+	$json_versions = file_get_contents("{$theme_uri}/assets/assets.json");
+	$versions = json_decode($json_versions, true);
 
 	if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
-		$mainJS = '/assets/js/main.js';
-		wp_register_script('main', $theme_uri . $mainJS, []);
+		$mainJS = "{$theme_uri}/assets/js/{$versions['main.js']}";
+		wp_register_script('main', $mainJS, [], null);
 		wp_enqueue_script('main');
 
-		$vendorJS = '/assets/js/vendor.js';
-		wp_register_script('vendor', $theme_uri . $vendorJS, []);
+		$vendorJS = "{$theme_uri}/assets/js/{$versions['vendor.js']}";
+		wp_register_script('vendor', $vendorJS, [], null);
 		wp_enqueue_script('vendor');
 	}
 }
@@ -21,10 +23,12 @@ function custom_css()
 {
 	global $theme_uri;
 	$post_type = get_post_type();
+	$json_versions = file_get_contents("{$theme_uri}/assets/assets.json");
+	$versions = json_decode($json_versions, true);
 
 	if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
-		$mainCSS = '/assets/css/main.css';
-		wp_register_style('main-css', $theme_uri . $mainCSS, []);
+		$mainCSS = "{$theme_uri}/assets/css/{$versions['main.css']}";
+		wp_register_style('main-css', $mainCSS, [], null);
 		wp_enqueue_style('main-css');
 	}
 }

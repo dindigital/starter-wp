@@ -1,3 +1,6 @@
 {
-	"extends": "stylelint-config-wordpress/scss"
+	"extends": "stylelint-config-wordpress/scss",
+  "ignoreFiles": [
+    "assets/**/*.css"
+  ]
 }
